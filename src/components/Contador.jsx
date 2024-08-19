@@ -6,11 +6,11 @@ const Contador = () => {
 //   const [frase, setFrase] = useState('');
   // let numero = 0;
 
-  const sumar = () => {
-    //  numero++;
-    setNumero(numero + 1);
-    //  numero = numero +1
-  };
+//   const sumar = () => {
+//     //  numero++;
+//     setNumero(numero + 1);
+//     //  numero = numero +1
+//   };
   const restar = () => {
     setNumero(numero - 1); 
   };
@@ -19,7 +19,7 @@ const Contador = () => {
     <section className="container text-center">
       <h2>Practica contador</h2>
       <p>{numero}</p>
-      <button className="btn btn-primary" onClick={sumar}>
+      <button className="btn btn-primary" onClick={() => setNumero(numero + 1)}>
         +1
       </button>
       <button className="btn btn-danger" onClick={restar}>
